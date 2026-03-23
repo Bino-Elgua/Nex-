@@ -3,6 +3,8 @@
 ![Layer](https://img.shields.io/badge/layer-VM-orange)
 # Nex v1.0 — Agent-Native Programming Language Runtime
 
+Nex is the agent-native graph runtime of the Technosis ecosystem — executing real-time computation graphs, agent orchestration flows, and neural routing at the VM layer.
+
 > **Àṣẹ** — The force that makes all creation possible.
 
 ## Overview
@@ -194,7 +196,7 @@ This frame ensures Nex remains **coherent, resilient, and aligned with agent rea
 
 ## License
 
-MIT (or public domain for philosophical/spiritual content)
+Proprietary — All Rights Reserved. See [LICENSE](./LICENSE).
 
 ---
 
