@@ -6,10 +6,12 @@
  * node, link, guard, spawn, rewrite, merge, eval
  */
 
+import type { } from "node";
+
 interface NexNode {
   id: string;
   kind: "goal" | "agent" | "memory" | "tool" | "guard" | "rewrite" | "reflect" | "merge" | "parallel";
-  data: Record<string, any> | string;
+  data: Record<string, unknown> | string;
   orisha?: string;
   hermetic?: string;
   note?: string;
@@ -25,8 +27,8 @@ interface NexGraph {
   nodes: NexNode[];
   links: NexLink[];
   entry: string;
-  result?: any;
-  meta?: Record<string, any>;
+  result?: Record<string, unknown>;
+  meta?: Record<string, unknown>;
 }
 
 class NexInterpreter {
@@ -91,13 +93,13 @@ class NexInterpreter {
     return this.evalNode(entryNode);
   }
 
-  private async evalNode(node: NexNode): Promise<any> {
+  private async evalNode(node: NexNode): Promise<Record<string, unknown>> {
     if (this.executed.has(node.id)) {
       return this.results.get(node.id);
     }
 
     // Execute based on node kind
-    let result: any;
+    let result: Record<string, unknown>;
 
     switch (node.kind) {
       case "goal":
@@ -157,53 +159,53 @@ class NexInterpreter {
     return result;
   }
 
-  private async executeGuard(node: NexNode): Promise<any> {
-    const data = typeof node.data === "string" ? JSON.parse(node.data) : node.data;
+  private async executeGuard(node: NexNode): Promise<Record<string, unknown>> {
+    const data = typeof node.data === "string" ? JSON.parse(node.data) : node.data as Record<string, unknown>;
     const { condition, consequence } = data;
 
     let conditionMet = true;
     if (condition) {
-      conditionMet = await this.evaluateCondition(condition);
+      conditionMet = await this.evaluateCondition(condition as unknown);
     }
 
     this.guards.set(node.id, conditionMet);
 
-    if (!conditionMet && consequence === "deny") {
+    if (consequence === "deny") {
       throw new Error(`Guard "${node.id}" denied execution`);
     }
 
     return { type: "guard", id: node.id, passed: conditionMet, consequence };
   }
 
-  private async evaluateCondition(condition: any): Promise<boolean> {
+  private async evaluateCondition(condition: unknown): Promise<boolean> {
     if (typeof condition === "boolean") return condition;
     if (typeof condition === "string") return condition.length > 0;
     return true;
   }
 
-  private async executeRewrite(node: NexNode): Promise<any> {
-    const data = typeof node.data === "string" ? JSON.parse(node.data) : node.data;
+  private async executeRewrite(node: NexNode): Promise<Record<string, unknown>> {
+    const data = typeof node.data === "string" ? JSON.parse(node.data) : node.data as Record<string, unknown>;
     return {
       type: "rewrite",
       id: node.id,
-      pattern: data.pattern,
-      replacement: data.replacement,
+      pattern: (data as Record<string, unknown>).pattern,
+      replacement: (data as Record<string, unknown>).replacement,
       applied: true,
     };
   }
 
-  private async executeMerge(node: NexNode): Promise<any> {
-    const data = typeof node.data === "string" ? JSON.parse(node.data) : node.data;
+  private async executeMerge(node: NexNode): Promise<Record<string, unknown>> {
+    const data = typeof node.data === "string" ? JSON.parse(node.data) : node.data as Record<string, unknown>;
     const { strategy, inputs } = data;
     const incomingLinks = this.getLinksTo(node.id);
-    const results = [];
+    const results: Record<string, unknown>[] = [];
 
     for (const link of incomingLinks) {
       const result = this.results.get(link.from);
-      if (result) results.push(result);
+      if (result) results.push(result as Record<string, unknown>);
     }
 
-    let merged: any;
+    let merged: Record<string, unknown>;
     switch (strategy) {
       case "consensus":
         merged = this.mergeConsensus(results);
@@ -227,15 +229,15 @@ class NexInterpreter {
     return { type: "merge", id: node.id, strategy, merged };
   }
 
-  private mergeConsensus(results: any[]): any {
+  private mergeConsensus(results: Record<string, unknown>[]): Record<string, unknown> {
     return { consensus: results, agreed: results.length > 0 };
   }
 
-  private mergeVote(results: any[]): any {
+  private mergeVote(results: Record<string, unknown>[]): Record<string, unknown> {
     return { votes: results, winner: results[0] };
   }
 
-  private mergeSynthesize(results: any[]): any {
+  private mergeSynthesize(results: Record<string, unknown>[]): Record<string, unknown> {
     return {
       synthesized: true,
       perspectives: results.length,
@@ -244,31 +246,31 @@ class NexInterpreter {
     };
   }
 
-  private async executeAgent(node: NexNode): Promise<any> {
-    const data = typeof node.data === "string" ? JSON.parse(node.data) : node.data;
+  private async executeAgent(node: NexNode): Promise<Record<string, unknown>> {
+    const data = typeof node.data === "string" ? JSON.parse(node.data) : node.data as Record<string, unknown>;
     return {
       type: "agent",
       id: node.id,
-      role: data.role,
-      goal: data.goal,
-      instructions: data.instructions,
+      role: (data as Record<string, unknown>).role,
+      goal: (data as Record<string, unknown>).goal,
+      instructions: (data as Record<string, unknown>).instructions,
       spawned: true,
     };
   }
 
-  private async executeReflect(node: NexNode): Promise<any> {
-    const data = typeof node.data === "string" ? JSON.parse(node.data) : node.data;
+  private async executeReflect(node: NexNode): Promise<Record<string, unknown>> {
+    const data = typeof node.data === "string" ? JSON.parse(node.data) : node.data as Record<string, unknown>;
     return {
       type: "reflect",
       id: node.id,
-      reasoning: data.reasoning || "Lateral reasoning invoked",
+      reasoning: (data as Record<string, unknown>).reasoning || "Lateral reasoning invoked",
     };
   }
 
-  private async executeParallel(node: NexNode): Promise<any> {
-    const data = typeof node.data === "string" ? JSON.parse(node.data) : node.data;
+  private async executeParallel(node: NexNode): Promise<Record<string, unknown>> {
+    const data = typeof node.data === "string" ? JSON.parse(node.data) : node.data as Record<string, unknown>;
     const outgoing = this.getLinksFrom(node.id).filter(l => l.type === "parallel");
-    const parallelResults = [];
+    const parallelResults: Record<string, unknown>[] = [];
 
     const promises = outgoing.map(async (link) => {
       const nextNode = this.getNode(link.to);
@@ -281,7 +283,7 @@ class NexInterpreter {
     return { type: "parallel", id: node.id, branches: results };
   }
 
-  public getResults(): Map<string, any> {
+  public getResults(): Map<string, Record<string, unknown>> {
     return this.results;
   }
 

@@ -23,7 +23,7 @@ interface GatewayRequest {
 interface GatewayResponse {
   id: string;
   status: "success" | "error";
-  result?: any;
+  result?: Record<string, unknown>;
   error?: string;
   timestamp: number;
   executionMs?: number;

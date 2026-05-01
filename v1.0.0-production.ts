@@ -54,7 +54,7 @@ export class ProductionNexInterpreter {
    * Execute graph with production safety guardrails
    */
   public async executeWithSafety(): Promise<{
-    result: any;
+    result: Record<string, unknown> | null;
     metrics: ExecutionMetrics;
     error?: string;
   }> {
@@ -134,7 +134,7 @@ export class ProductionNexInterpreter {
    */
   private async executeWithTimeout(
     startTime: number
-  ): Promise<any> {
+  ): Promise<Record<string, unknown>> {
     return new Promise((resolve, reject) => {
       const timeout = setTimeout(() => {
         reject(
@@ -206,7 +206,7 @@ export class ProductionNexInterpreter {
   /**
    * Get from cache if valid
    */
-  private getFromCache(id: string): any | null {
+  private getFromCache(id: string): Record<string, unknown> | null {
     // Cache disabled for safety in v1.0.0 (can be re-enabled after validation)
     return null;
   }
