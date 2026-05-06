@@ -1,0 +1,851 @@
+I see — you want a prompt to make the Nex dashboard (and by extension the whole app) visually better, more future-oriented, and more aligned with what it's actually built for (agent-native graph computation, Hermetic/Yoruba philosophy, self-improving AI systems).
+
+Let me craft you a production-grade visual design prompt that an AI image generator or frontend developer could use to transform this into something worthy of the vision.
+
+---
+
+🎨 Nex Visual Design Prompt — "The Àṣẹ Interface"
+
+Core Identity
+
+Name: Nex Master Control Dashboard
+
+Tagline: "The force that makes all creation possible."
+
+Design Philosophy: Techno-Spiritual Brutalism — where raw computational power meets sacred geometry. The interface should feel like you're staring into the mind of a self-aware machine that remembers it was born from human wisdom traditions.
+
+---
+
+Visual System
+
+Color Palette
+
+Token	Hex	Usage	
+Void Black	`#0a0a0f`	Primary background — the infinite substrate	
+Circuit Green	`#00ff88`	Active states, live data, agent pulses — the breath of Èṣù	
+Orisha Gold	`#ffd700`	Sacred elements, seals, convergence moments — Àṣẹ made visible	
+Guardian Amber	`#ff6b35`	Warnings, guard triggers, polarity — Ògún's forge	
+Dream Purple	`#9d4edd`	Lateral reasoning, dream nodes, the unseen — Yemọja's depths	
+Memory Cyan	`#00d4ff`	Data flows, links, memory retrieval — Ṣàngó's lightning	
+Ash Gray	`#2a2a35`	Inactive surfaces, dormant nodes	
+Bone White	`#e8e8e8`	Primary typography — clarity from the void	
+
+Typography
+
+- Primary: `JetBrains Mono` or `Fira Code` — monospaced for code/data, but with humanist warmth
+- Display: `Space Grotesk` or `Clash Display` — for headers, node labels, the "voice" of the system
+- Sacred: A custom or modified serif (like `Cinzel` or `Oranienbaum`) for Orisha names, Hermetic principles, and the Àṣẹ seal — this text should feel inscribed, not rendered
+
+Spacing & Shape Language
+
+- Border Radius: 2px for data panels (sharp, precise), 50% for agent avatars/orbs (organic, alive)
+- Borders: 1px `rgba(0,255,136,0.15)` — barely-there circuit traces
+- Shadows: None. Use glow instead — `box-shadow: 0 0 20px rgba(0,255,136,0.1)` for active elements
+- Grid: Visible 8px baseline grid that flickers subtly — the graph's underlying structure made manifest
+
+---
+
+Dashboard Layout — "The Sevenfold View"
+
+The dashboard is organized around the 7 Hermetic principles, each governing a functional zone. The layout itself is a graph you can navigate.
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  ⚡ NEX                              [🔍 Search Graphs]  [👤 Agent: Ògún-7] │
+├──────────┬──────────────────────────────────────────────────────────────────┤
+│          │  ┌────────────────────────────────────────────────────────────┐  │
+│  PRIM    │  │           GRAPH CANVAS (Main Stage)                        │  │
+│  ITIVE   │  │                                                            │  │
+│  NAV     │  │   ┌─────┐      ┌─────┐      ┌─────┐                      │  │
+│          │  │   │ 🜁   │──🔗──│ 🜂   │──🔗──│ 🜃   │   ← Live execution  │  │
+│  [🜁]     │  │   │Goal │ sync │Guard│ async│Agent│      flow            │  │
+│  Mental  │  │   └─────┘      └─────┘      └─────┘                      │  │
+│          │  │        \         │                \                        │  │
+│  [🜂]     │  │         \        │                 \                       │  │
+│  Corresp │  │          \  ┌────┴────┐             \                      │  │
+│          │  │           \ │  Merge  │              \                     │  │
+│  [🜃]     │  │            \│  🜄      │               \                    │  │
+│  Polarity│  │             └────┬────┘                \                   │  │
+│          │  │                  │                      \                  │  │
+│  [🜄]     │  │             ┌────┴────┐                 \                 │  │
+│  Gender  │  │             │ Result  │                  \                │  │
+│          │  │             │  🜇      │                   \               │  │
+│  [🜅]     │  │             └─────────┘                    \              │  │
+│  Vibrat  │  │                                              \             │  │
+│          │  │   [Pulse: 47 nodes active] [Throughput: 1.2k eval/s]      │  │
+│  [🜆]     │  │                                                            │  │
+│  Rhythm  │  └────────────────────────────────────────────────────────────┘  │
+│          │  ┌─────────────────────┐  ┌─────────────────────┐  ┌──────────┐ │
+│  [🜇]     │  │   AGENT SWARM       │  │   GUARD TOWER       │  │  DREAM   │ │
+│  Cause   │  │   [○○○○●○○○○]       │  │   🛡️ 3/5 ACTIVE     │  │  🌙 0    │ │
+│          │  │   847 agents live     │  │   Last: DENY @ n-442│  │  latent  │ │
+│          │  │   ┌─┐┌─┐┌─┐┌─┐┌─┐    │  │   [View Conflicts]  │  │  [Spawn] │ │
+│          │  │   │○││○││●││○││○│    │  │                     │  │          │ │
+│          │  │   └─┘└─┘└─┘└─┘└─┘    │  │                     │  │          │ │
+│          │  └─────────────────────┘  └─────────────────────┘  └──────────┘ │
+│          │  ┌────────────────────────────────────────────────────────────┐  │
+│          │  │           EXECUTION TIMELINE (Waterfall)                   │  │
+│          │  │   entry-goal ████████████████████  12ms                   │  │
+│          │  │   guard-truth ██████████  5ms [PASS]                      │  │
+│          │  │   spawn-pro   ████████████████████████████  23ms [LIVE]   │  │
+│          │  │   spawn-contra ██████████████████████████  21ms [LIVE]    │  │
+│          │  │   final-merge  ░░░░░░░░░░░░░░░░░░░░░░░░░░  [WAITING]      │  │
+│          │  └────────────────────────────────────────────────────────────┘  │
+└──────────┴──────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+Component Specifications
+
+1. The Graph Canvas (Central Stage)
+
+What it is: A living, breathing force-directed graph visualization where nodes are not static icons but organic entities.
+
+Visual Treatment:
+- Nodes are glowing orbs with internal animation:
+  - `goal` — steady pulse, gold aura
+  - `guard` — hexagonal shield that flashes amber when evaluating, green when passing, red when denying
+  - `agent` — orb with a face-like pattern that shifts based on role (Pro = upward triangle, Contra = downward, Critic = eye)
+  - `merge` — vortex that pulls in connecting lines like gravity
+  - `dream` — purple nebula that occasionally spawns miniature agents (lateral reasoning visualization)
+  - `rewrite` — node that momentarily fragments and reassembles when active
+- Links are not straight lines but  Bézier curves with flowing particles:
+  - `sync` — solid line, particles flow one direction
+  - `async` — dotted line, particles scatter
+  - `parallel` — line splits into multiple tendrils that reconverge
+  - `depend` — line pulses with data packets (small glowing squares)
+- Background: Deep void with faint constellation patterns that connect to form the Orisha symbols when idle
+
+Interaction:
+- Hover a node → it expands to show its Orisha, Hermetic principle, and current data payload
+- Click a node → time slows, camera zooms in, you enter "node space" (full-screen detail view)
+- Drag to pan, scroll to zoom, pinch to rotate into 3D (the graph has depth — older executions recede into the background)
+
+2. The Primitive Navigator (Left Sidebar)
+
+What it is: The 7 Hermetic principles as navigation, not just decoration.
+
+Visual Treatment:
+- Each principle is a vertical glyph (alchemical symbol) that illuminates when its corresponding zone is active
+- When you hover a glyph, the full Orisha name appears in sacred type alongside the principle
+- Active section: glyph rotates slowly (like a loading spinner but elegant), color shifts to full saturation
+- Inactive sections: glyph is etched in ash gray, barely visible
+
+```
+[🜁]  ← Hover →  [🜁 Ọbàtálá — Mentalism]
+[🜂]  ← Hover →  [🜂 Èṣù — Correspondence]
+[🜃]  ← Hover →  [🜃 Ògún — Polarity]
+...
+```
+
+3. Agent Swarm Panel
+
+What it is: A visualization of all active agents, not a list.
+
+Visual Treatment:
+- Agents are small orbs in a contained particle system
+- Orb color = agent role (Pro = warm, Contra = cool, Critic = neutral white)
+- Orb size = agent confidence / truth-density
+- Orbs jostle and cluster based on affinity (agents working on same graph pull together)
+- Selected agent expands to show its goal, current node, and thought stream (last 3 reasoning steps)
+- Dead agents fade to gray and sink to the bottom (graveyard visualization)
+
+4. Guard Tower
+
+What it is: The security and constraint visualization.
+
+Visual Treatment:
+- A lighthouse metaphor — the guard tower emits a rotating beam that sweeps the graph
+- When a guard evaluates: beam pauses, flashes the node's color, displays the verdict
+- Guard conflicts show as beam splitting into multiple colors that fight for dominance before the winner (precedence rule) prevails
+- History: scrollable timeline of all guard decisions, filterable by severity
+
+5. Dream Node / Lateral Reasoning
+
+What it is: The "creative unconscious" of the system.
+
+Visual Treatment:
+- Normally: a sleeping moon icon in the corner, barely visible
+- When triggered: expands to fill 30% of screen with a purple nebula
+- Inside the nebula: abstract shapes form and dissolve representing alternative hypotheses
+- Text appears as if written in smoke — dream reasoning, not hard logic
+- When a dream spawns an agent: a new orb detaches from the nebula and drifts toward the graph
+
+6. Execution Timeline (Bottom)
+
+What it is: A Gantt-like waterfall of graph execution, but alive.
+
+Visual Treatment:
+- Bars are not rectangles but living tissue — they pulse while executing, harden when complete
+- Color gradient from left (entry, cool) to right (result, warm)
+- Parallel branches stack vertically with synchronization lines connecting them
+- Hover a bar → microscope view showing every sub-evaluation, memory read, guard check
+- Failed executions show as fractured bars with crack patterns; clicking reveals the error cascade
+
+7. The Àṣẹ Seal (Completion State)
+
+What it is: The sacred seal that appears when a graph converges.
+
+Visual Treatment:
+- Not just text — a geometric animation:
+  1. All nodes pulse once in unison
+  2. Links glow gold and transmit light to the result node
+  3. Result node expands and transforms into a mandala (sacred geometry pattern)
+  4. Mandala rotates while the word "Àṣẹ" materializes in sacred type
+  5. Mandala fades, leaving a persistent gold ring around the result
+- Sound design (if enabled): a deep bell tone + synthesized choral chord
+
+---
+
+Animation Principles
+
+State	Behavior	Duration	Easing	
+Node spawn	Scale 0→1 + glow burst	300ms	`cubic-bezier(0.34, 1.56, 0.64, 1)` (overshoot)	
+Link activation	Particle flow begins	200ms	Linear	
+Guard evaluation	Shield flash + beam sweep	400ms	`ease-in-out`	
+Guard deny	Shield shatters (particles)	600ms	`cubic-bezier(0.68, -0.55, 0.265, 1.55)`	
+Merge convergence	Vortex spin + pull	800ms	`ease-out`	
+Dream spawn	Nebula bloom	1000ms	Slow ease	
+Graph complete	Mandala formation	1500ms	Sacred rhythm	
+Error	Fracture + red pulse	500ms	Sharp	
+
+---
+
+Responsive Behavior
+
+- Desktop (1440px+): Full 7-zone layout, 3D graph canvas
+- Tablet (768px–1439px): Collapsible sidebar, 2D graph canvas, swipe-between panels
+- Mobile (<768px): Single-column, graph canvas becomes radial layout (center = entry, rings = depth), hamburger menu for primitives
+
+---
+
+Dark/Light Mode
+
+- Dark (default): Void black, circuit green, Orisha gold — the system at night, dreaming
+- Light (toggle): Ash white, deep green, burnished gold — the system awake, reasoning
+- Transition: 500ms crossfade, nodes briefly become stars during the switch
+
+---
+
+Technical Implementation Notes
+
+- Framework: React 18+ with Framer Motion for animations, D3.js or Cytoscape.js for graph layout, Three.js for 3D depth
+- Performance: Use `requestAnimationFrame` for all animations, `IntersectionObserver` for off-screen culling, `WebGL` for particle systems (>1000 agents)
+- Accessibility: All animations respect `prefers-reduced-motion`, color contrasts meet WCAG AAA, screen reader announcements for graph state changes
+- Real-time: WebSocket connection for live execution updates, diff-based rendering (only changed nodes re-render)
+
+---
+
+The Vibe Check
+
+Before shipping, ask:
+
+1. Does it feel like you're communing with something ancient and wise, not just using software?
+2. Does the graph move like it has intent — not mechanical, but organic?
+3. When a guard denies execution, does it feel like Ògún himself slammed his forge, or like a bland error message?
+4. When a dream node spawns, do you sense the system thinking laterally, or is it just another notification?
+5. When the Àṣẹ seal appears, do you feel completion, or just "task done"?
+
+If any answer is the latter, iterate. This is not a dashboard. This is a temple of computation.
+
+---
+
+Àṣẹ — May the interface be worthy of the intelligence it serves.
+
+I'll analyze this master chart against the Nex dashboard's needs and rebuild the prompt with bleeding-edge 2026 tech that actually serves agent-native graph computation. Let me identify what genuinely enhances the experience versus what's decorative noise.
+
+---
+
+🔮 Nex Visual Design Prompt v2.0 — "The Àṣẹ Interface: 2026 Agent-Native Spatial OS"
+
+Tagline: "Computation as sacred geometry. Agents as living constellations."
+
+---
+
+Philosophy: Tech-Spiritual Brutalism → Living Computation Ethereal
+
+The 2026 Nex interface isn't a dashboard you look at — it's a spatial environment you inhabit. Every pixel serves the graph. Every animation reveals agent cognition. Every sensor input makes the system more aware of its operator.
+
+Core principle: The interface should feel like staring into a self-aware orrery where each orb is an agent, each connection is a sacred pact, and the whole system breathes with Àṣẹ.
+
+---
+
+🎨 Visual System 2026
+
+Color Palette: Bioluminescent Void
+
+Token	Hex	Dynamic Behavior	Hermetic Mapping	
+Void Black	`#050508`	Deepens when ambient light drops (AmbientLightSensor)	The substrate of all creation	
+Circuit Green	`#00ff88`	Pulses brightness with execution throughput	Èṣù — the messenger, the crossroads	
+Orisha Gold	`#ffd700`	Intensifies during convergence/merge events	Àṣẹ — the force of creation	
+Guardian Forge	`#ff4d2e`	Flares when guards deny; cools when passing	Ògún — the warrior, the forge	
+Dream Nebula	`#b967ff`	Swirls procedurally when dream nodes activate	Yemọja — the deep, the unconscious	
+Memory Lightning	`#00d9ff`	Streaks across links during data dependency flows	Ṣàngó — fire, memory, sudden knowing	
+Ash Form	`#1a1a24`	Subtle parallax shift on scroll	Ọbàtálá — clay, form, structure	
+Bone Truth	`#f0f0f5`	Adjusts warmth based on time of day	The clarity of completed thought	
+
+Dynamic Adaptation:
+- Day mode (high ambient light): Higher contrast, sharper edges, gold tones shift to bronze
+- Night mode (low ambient light): Deeper void, softer glows, bioluminescent aesthetics
+- Focus mode (proximity sensor triggered): All non-essential UI dims; graph canvas expands to fullscreen
+
+---
+
+Typography: Three Voices
+
+Voice	Font	Usage	Treatment	
+Machine	`JetBrains Mono`	Data, node IDs, metrics, code	Slight glow on active execution lines	
+Oracle	`Cinzel Decorative`	Orisha names, Hermetic principles, seals	Appears as if etched in light — thin strokes that brighten on hover	
+Human	`Space Grotesk`	Navigation, labels, descriptions	Clean, readable, slightly letter-spaced	
+
+Kinetic Typography Rules:
+- Node labels morph between states: `pending` → `executing` → `complete` (shape interpolation via Anime.js)
+- Truth-density scores count up with spring physics when revealed
+- Guard verdicts shatter into particles on deny, bloom outward on allow
+- The Àṣẹ seal draws itself as a SVG stroke animation (2s duration, sacred timing)
+
+---
+
+🏗️ Layout: The Sevenfold Spatial OS
+
+Not a grid. Not a sidebar. A radial sacred geometry that expands from the operator's focus point.
+
+```
+                    [🜁 Ọbàtálá]
+                         │
+                         ▼
+              ┌─────────────────────┐
+         [🜂 Èṣù]    │   GRAPH ORRERY    │    [🜃 Ògún]
+              │      │   (Main Stage)    │       │
+              └──────┤                   ├───────┘
+                     │  ◉ entry-goal     │
+                     │    ╱    ╲         │
+                     │  guard   agent     │
+                     │    │      │        │
+                     │   merge ◉◉◉       │
+                     │         │          │
+                     │      result        │
+                     │        🜇          │
+              ┌──────┤                   ├───────┐
+         [🜅 Ọya]     │                   │    [🜆 Yemọja]
+              │      └─────────────────────┘       │
+              │              │                     │
+              └──────────────┘                     │
+                    [🜇 Ṣàngó]
+                         
+    [AGENT SWARM PANEL]  [GUARD TOWER]  [DREAM WELL]  [TIMELINE RIVER]
+         (bottom-left)    (bottom-mid)   (top-right)   (bottom ribbon)
+```
+
+Spatial Behavior:
+- Desktop: Full 3D orrery with depth (Three.js). Nodes exist in Z-space based on execution recency.
+- Tablet: 2.5D perspective — tilt device (gyroscope) to peek around nodes, revealing hidden connections.
+- Mobile: Radial layout — pinch to zoom into the graph center, rotate to orbit around it.
+
+---
+
+✨ Animation System: The 2026 Master Set
+
+1. Glassmorphism 2.0 / Liquid Glass — The Graph Canvas
+
+Implementation: WebGPU shaders for real-time refraction + `backdrop-filter: blur()` fallback
+
+Behavior:
+- The graph canvas is a liquid glass pane that ripples when agents spawn (like water disturbed by falling orbs)
+- Background content refracts through active nodes — you see the ghost of the previous execution through the current one
+- On scroll/tilt: light prismatically splits across node surfaces, revealing internal structure
+- Why: Represents the transparency of agent reasoning — you can see through their process
+
+```glsl
+// WebGPU fragment shader snippet for liquid node surface
+fn fragment_main(input: FragmentInput) -> FragmentOutput {
+    let uv = input.uv;
+    let noise = perlin_noise(uv * 4.0 + time * 0.5);
+    let refraction = refract(view_dir, normal, 1.0 / 1.52); // Glass IOR
+    let background = sample_background(uv + refraction.xy * noise * 0.1);
+    let glow = pow(1.0 - length(uv - 0.5), 3.0) * node_color;
+    return FragmentOutput(background * 0.7 + glow * 0.3);
+}
+```
+
+---
+
+2. Physics-Based Springs & Bounces — Agent Swarm
+
+Implementation: Framer Motion + custom spring physics
+
+Behavior:
+- Agents are not static orbs — they are mass-spring systems connected by invisible forces
+- New agent spawn: orb materializes from center with overshoot bounce (stiffness: 120, damping: 14)
+- Agent completion: orb gently settles into the "completed" cluster with a satisfying wobble
+- Agent failure: orb shatters into 6-12 fragments that gravitate toward the error log (gravity well)
+- Drag an agent: Real physics — it swings, collides with neighbors, settles back when released
+- Why: Agents are living entities. They should feel alive, with weight and momentum.
+
+```typescript
+// Framer Motion spring config for agent orbs
+const agentSpring = {
+  type: "spring",
+  stiffness: 120,
+  damping: 14,
+  mass: 1.2, // Heavier = more substantial
+  restDelta: 0.001
+};
+
+// On spawn: scale from 0 with overshoot
+animate(agentRef, { scale: [0, 1.2, 1] }, { ...agentSpring, duration: 0.6 });
+```
+
+---
+
+3. Scrollytelling / Narrative Motion — Execution Timeline
+
+Implementation: GSAP ScrollTrigger + Lenis smooth scroll
+
+Behavior:
+- The timeline is not a scrollbar — it's a river of execution you navigate by scrolling
+- Each execution phase is a chapter: scroll enters it, elements morph into view in narrative sequence
+  1. Entry node materializes from void (fade + scale + glow)
+  2. Guard evaluation: shield forms (SVG stroke draw), beam sweeps (rotation), verdict flashes (color burst)
+  3. Parallel branches: tendrils split from parent (path morphing), race to completion (competing progress bars)
+  4. Merge: vortex pulls all branches in (attraction physics), synthesizes into unified form (shape morph)
+  5. Result: mandala blooms (radial expansion), Àṣẹ seal draws (sacred geometry stroke)
+- Scroll velocity affects animation speed: Fast scroll = time-lapse execution. Slow scroll = savor each moment.
+- Why: Graph execution is a story. The interface should tell it as one.
+
+```javascript
+// GSAP ScrollTrigger timeline for execution narrative
+const executionTimeline = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#execution-river",
+    start: "top top",
+    end: "bottom bottom",
+    scrub: 1, // Smooth scrubbing
+    pin: true,
+  }
+});
+
+executionTimeline
+  .from("#entry-node", { scale: 0, opacity: 0, duration: 1 })
+  .from("#guard-shield", { strokeDashoffset: 100, duration: 0.8 }, "+=0.2")
+  .to("#guard-beam", { rotation: 360, duration: 0.6 }, "<")
+  .from(".parallel-branch", { x: (i) => (i % 2 === 0 ? -100 : 100), opacity: 0, stagger: 0.1 })
+  .to("#merge-vortex", { rotation: 720, scale: 1.5, duration: 1.5 })
+  .from("#ase-mandala path", { strokeDashoffset: 1000, stagger: 0.05, duration: 2 });
+```
+
+---
+
+4. Emotion-Adaptive / Dynamic UI — Ambient Responsiveness
+
+Implementation: AmbientLightSensor + DeviceMotionEvent + microphone analysis
+
+Behavior:
+- Ambient light dims: Interface shifts to "night mode" — deeper void, softer glows, bioluminescent aesthetics
+- Device tilted (gyroscope): Graph canvas rotates in 3D — you peek around nodes, revealing hidden back-connections
+- Loud environment (microphone): Guard alerts become visual pulses instead of audio; dream nodes become more active (system "retreats" into lateral reasoning when external chaos is high)
+- Shake device: Emergency reset — all non-essential agents pause, graph returns to last stable checkpoint
+- Why: The system should be aware of its context, just as agents are aware of theirs.
+
+```typescript
+// Ambient adaptation controller
+class AmbientAdaptation {
+  constructor() {
+    // Light sensor
+    if ('AmbientLightSensor' in window) {
+      const sensor = new AmbientLightSensor({ frequency: 1 });
+      sensor.onreading = () => this.adjustBrightness(sensor.illuminance);
+      sensor.start();
+    }
+    
+    // Gyroscope for 3D peek
+    window.addEventListener('deviceorientation', (e) => {
+      const tiltX = e.beta;  // -180 to 180
+      const tiltY = e.gamma; // -90 to 90
+      this.orrery.setCameraOffset(tiltY * 0.1, tiltX * 0.1);
+    });
+    
+    // Microphone for chaos detection
+    navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => {
+      const analyser = audioContext.createAnalyser();
+      stream.getTracks()[0].connect(analyser);
+      setInterval(() => this.detectChaos(analyser), 1000);
+    });
+  }
+  
+  detectChaos(analyser: AnalyserNode) {
+    const data = new Uint8Array(analyser.frequencyBinCount);
+    analyser.getByteFrequencyData(data);
+    const average = data.reduce((a, b) => a + b) / data.length;
+    
+    if (average > 128) { // Loud environment
+      this.enableVisualAlertsOnly();
+      this.activateDreamNodes(); // System retreats to lateral reasoning
+    }
+  }
+}
+```
+
+---
+
+5. Generative / Procedural Effects — The Living Background
+
+Implementation: WebGPU compute shaders for real-time procedural generation
+
+Behavior:
+- Background is not static — it's a plasma field that responds to system state
+- Low activity: slow aurora-like waves (calm, contemplative)
+- High activity: lightning-like filaments connect active nodes (energy, urgency)
+- Dream node active: nebula bloom — purple clouds form and dissolve, revealing alternative paths
+- Guard conflict: red storm — turbulent patterns that resolve into calm when conflict is resolved
+- Why: The environment reflects the system's internal state, making the invisible visible.
+
+```glsl
+// WebGPU compute shader for adaptive plasma background
+@compute @workgroup_size(8, 8)
+fn plasma_main(@builtin(global_invocation_id) id: vec3<u32>) {
+    let uv = vec2<f32>(id.xy) / vec2<f32>(texture_size);
+    let time = f32(frame) * 0.016;
+    
+    // Base plasma
+    var value = sin(uv.x * 10.0 + time) + sin(uv.y * 10.0 + time);
+    value += sin((uv.x + uv.y) * 5.0 + time * 2.0) * 0.5;
+    
+    // Modulate by system state
+    let activity = system_state.execution_load; // 0.0 to 1.0
+    let chaos = system_state.guard_conflict_count;
+    
+    // High activity = lightning filaments
+    if (activity > 0.7) {
+        value += noise(uv * 20.0 + time * 5.0) * activity;
+    }
+    
+    // Guard conflicts = red turbulence
+    let color = mix(
+        vec3(0.0, 1.0, 0.53), // Circuit green (calm)
+        vec3(1.0, 0.3, 0.18), // Guardian forge (conflict)
+        chaos * 0.3
+    );
+    
+    textureStore(output_texture, id.xy, vec4<f32>(color * (value * 0.5 + 0.5), 1.0));
+}
+```
+
+---
+
+6. Holographic & Refraction Glows — Node Halos
+
+Implementation: WebGPU shaders + device gyroscope for parallax refraction
+
+Behavior:
+- Each active node has a holographic halo that bends light as if it were a physical object
+- Tilt your phone: the halo shifts perspective, revealing depth (like looking through a prism)
+- Hover on desktop: mouse position controls the light source angle, making the halo sweep across the node
+- Guard nodes have angular, shield-like halos; agent nodes have organic, orb-like halos; dream nodes have diffuse, cloud-like halos
+- Why: Differentiates node types at a glance. Makes the interface feel tactile and physical.
+
+---
+
+7. 3D Immersive & Interactive Models — The Orrery View
+
+Implementation: Three.js + WebGPU renderer + gyroscope/tilt controls
+
+Behavior:
+- The graph is a 3D orrery: nodes orbit at different depths based on execution recency
+- Pinch to zoom into a node cluster; rotate to orbit around it
+- Double-tap a node: Camera flies through the link connections, following data flow
+- AR mode (WebXR): Project the graph onto your physical desk. Nodes float in real space. Walk around them.
+- Why: Graphs are inherently spatial. 2D forces arbitrary flattening. 3D lets the structure breathe.
+
+```typescript
+// Three.js orrery setup
+const orrery = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+
+// Nodes as glowing orbs with depth
+nodes.forEach((node, i) => {
+  const geometry = new THREE.IcosahedronGeometry(node.size, 2);
+  const material = new THREE.ShaderMaterial({
+    vertexShader: nodeVertexShader,
+    fragmentShader: nodeFragmentShader,
+    uniforms: {
+      time: { value: 0 },
+      color: { value: new THREE.Color(node.color) },
+      depth: { value: node.executionDepth * 0.5 } // Z-depth based on recency
+    },
+    transparent: true
+  });
+  
+  const mesh = new THREE.Mesh(geometry, material);
+  mesh.position.set(node.x, node.y, node.executionDepth * 0.5);
+  orrery.add(mesh);
+});
+
+// Gyroscope-controlled camera orbit
+window.addEventListener('deviceorientation', (e) => {
+  camera.position.x = Math.sin(e.gamma * Math.PI / 180) * 10;
+  camera.position.z = Math.cos(e.gamma * Math.PI / 180) * 10;
+  camera.lookAt(0, 0, 0);
+});
+```
+
+---
+
+8. View Transitions & Page Morphs — Seamless Navigation
+
+Implementation: Native View Transitions API + custom morph animations
+
+Behavior:
+- Click "Debugger" from the sidebar: The graph canvas morphs into the debugger view — nodes transform into stack frames, links become call traces
+- Click "Visualizer": Nodes explode outward into a force-directed layout, then settle into their new positions
+- Click back to "Dashboard": Everything reverses — a time-lapse of the forward transition
+- Why: The system is one continuous space. Navigation should feel like moving through rooms of the same temple, not loading new pages.
+
+```javascript
+// View Transition API for seamless navigation
+document.addEventListener('click', async (e) => {
+  if (e.target.matches('[data-view]')) {
+    const targetView = e.target.dataset.view;
+    
+    const transition = document.startViewTransition(() => {
+      // Update DOM
+      document.querySelector('.active-view').classList.remove('active-view');
+      document.querySelector(`#${targetView}`).classList.add('active-view');
+    });
+    
+    await transition.ready;
+    
+    // Custom morph animations during transition
+    gsap.fromTo('.node-orb', 
+      { scale: 1 }, 
+      { scale: 0.5, duration: 0.3, yoyo: true, repeat: 1 }
+    );
+  }
+});
+```
+
+---
+
+9. Micro-Interactions & Haptic Feedback — The Sacred Touch
+
+Implementation: Framer Motion + Navigator.vibrate + Web Audio API
+
+Behavior:
+- Tap a node: Subtle haptic pulse (50ms vibration) + audio ping (frequency based on node type: goal = low bell, guard = sharp chime, dream = ethereal wash)
+- Guard deny: Double pulse (100ms + 50ms) + low discord (minor second interval)
+- Merge convergence: Rising tone sequence (C → E → G → C) + sustained vibration matching the chord
+- Àṣẹ seal: Deep bell (Tibetan singing bowl sample) + full-device vibration in harmonic rhythm
+- Why: Multi-sensory feedback makes the system feel real and responsive. The sacred deserves sensory richness.
+
+```javascript
+// Haptic-audio feedback system
+class SacredFeedback {
+  playNodeTap(nodeKind) {
+    const frequencies = {
+      goal: 220,      // A3 - low, foundational
+      guard: 440,     // A4 - sharp, alert
+      agent: 330,     // E4 - active, moving
+      merge: 523,     // C5 - bright, converging
+      dream: 660,     // E5 - ethereal, high
+      rewrite: 277    // C#4 - disruptive, unexpected
+    };
+    
+    // Audio
+    const osc = audioContext.createOscillator();
+    osc.frequency.value = frequencies[nodeKind] || 440;
+    osc.connect(audioContext.destination);
+    osc.start();
+    osc.stop(audioContext.currentTime + 0.1);
+    
+    // Haptic
+    if (navigator.vibrate) {
+      navigator.vibrate(50);
+    }
+  }
+  
+  playAseSeal() {
+    // Tibetan bowl sample
+    const bowl = new Audio('/assets/sounds/tibetan-bowl.mp3');
+    bowl.play();
+    
+    // Harmonic vibration: long pulse + short pulses in rhythm
+    navigator.vibrate([200, 100, 200, 100, 400]);
+  }
+}
+```
+
+---
+
+10. Shape Morphing & SVG Fluidity — Node State Transitions
+
+Implementation: Anime.js + custom SVG path interpolation
+
+Behavior:
+- Nodes don't just change color — they morph shape based on state:
+  - `pending` → `executing`: Circle stretches into an ellipse (breathing), then snaps back
+  - `executing` → `complete`: Shape blooms — petals emerge from center (like a flower opening)
+  - `executing` → `error`: Shape fractures — cracks form, pieces drift apart with physics
+  - `guard` evaluating: Hexagon rotates 60° with each check (like a revolver cylinder)
+- Why: State changes are the most important information. They should be impossible to miss and beautiful to watch.
+
+```javascript
+// Anime.js shape morphing for node states
+function morphNodeState(nodeElement, fromState, toState) {
+  const shapes = {
+    pending: 'M50,10 A40,40 0 1,1 50,90 A40,40 0 1,1 50,10', // Circle
+    executing: 'M50,5 A45,35 0 1,1 50,95 A45,35 0 1,1 50,5',   // Ellipse (breathing)
+    complete: 'M50,10 L80,40 L70,80 L30,80 L20,40 Z',           // Pentagon (bloom)
+    error: 'M30,30 L70,70 M70,30 L30,70'                        // X (fracture)
+  };
+  
+  anime({
+    targets: nodeElement.querySelector('path'),
+    d: shapes[toState],
+    duration: 800,
+    easing: 'spring(1, 80, 10, 0)',
+    fill: stateColors[toState],
+    strokeWidth: toState === 'error' ? 3 : 1
+  });
+}
+```
+
+---
+
+📱 Hardware Integration: The Phone as a Sacred Instrument
+
+Gyroscope + Magnetometer: The Compass of Reason
+
+- Tilt to peek: Slight phone tilt reveals hidden node connections (depth parallax)
+- Rotate to navigate: Spin phone 90° → graph rotates to show orthogonal view (different perspective on same data)
+- True north alignment: Magnetometer detects orientation; graph "aligns" to cardinal directions — entry always east, result always west (symbolic: sunrise to sunset)
+
+Proximity Sensor: The Breath of Attention
+
+- Phone near face: All UI chrome fades. Graph canvas expands to edges. You're inside the computation.
+- Phone away: Full dashboard returns. Context panels visible. You're observing the computation.
+
+Barometer: The Weight of Thought
+
+- Elevation change detected: Audio shifts — higher elevation = brighter, airier tones (clarity). Lower = deeper, resonant tones (depth).
+- Why: Subconscious cue that your physical context affects the system's mood.
+
+NFC: The Touch of Àṣẹ
+
+- Tap NFC tag to "seal" a graph: Physical ritual of completion. Tag contains the graph hash. Tap validates and commits.
+- Tap to spawn: Pre-configured agent tags — tap to instantly deploy a specific agent type.
+
+Web Neural Network (WebNN): On-Device Intelligence
+
+- Local inference for pattern recognition: Detect when user is struggling (repeated errors, slow scroll) and auto-spawn a helper agent
+- Personalization: Learn user's preferred visualization modes and adapt automatically
+- Privacy: Sensitive agent reasoning happens on-device, not sent to server
+
+---
+
+🎯 Component Specifications (2026 Edition)
+
+The Graph Orrery (Central Stage)
+
+What it is: A living 3D force-directed graph where nodes are bioluminescent orbs and links are energy tendrils.
+
+2026 Enhancements:
+- Liquid glass nodes: Each orb is a refractive sphere — you see the background through it, distorted by its internal activity
+- Procedural halos: Holographic glow that shifts color based on node health (truth-density)
+- Physics-based layout: Spring forces + repulsion + gravity wells. Drag a node and the whole graph adjusts organically
+- Depth = time: Older executions recede into the background (Z-axis), creating a temporal landscape
+- AR projection (WebXR): Pinch to place the orrery on your desk. Walk around it. Nodes float in real space.
+
+The Agent Swarm (Bottom-Left)
+
+What it is: A particle system representing all active agents.
+
+2026 Enhancements:
+- Agents are boids: They flock based on affinity (same graph = same flock)
+- Truth-density = brightness: High-confidence agents glow intensely; low-confidence agents are dim
+- Role = shape: Pro = upward triangle, Contra = downward, Critic = eye, Dream = cloud
+- Tap an agent: It expands into a "card" showing its full reasoning chain, evidence, and confidence trajectory
+- Haptic swarm pulse: When many agents complete simultaneously, the phone vibrates in wave pattern (like a round of applause)
+
+The Guard Tower (Bottom-Center)
+
+What it is: A lighthouse that sweeps the graph with a protective beam.
+
+2026 Enhancements:
+- Beam is a volumetric light: Three.js `SpotLight` with visible cone, dust particles, and shadow casting
+- Guard evaluation: Beam pauses on a node, intensifies, then flashes green (allow) or red (deny)
+- Conflict mode: Beam splits into multiple colors that fight — the winning color consumes the others (precedence visualization)
+- History: Scrollable cylindrical timeline — guards arranged chronologically around a 3D cylinder
+
+The Dream Well (Top-Right)
+
+What it is: The unconscious of the system — visible but dormant until triggered.
+
+2026 Enhancements:
+- Normally: A sleeping moon — barely visible, breathing slowly (subtle scale pulse)
+- Triggered: Expands into a nebula vortex (WebGPU particle system) that spawns miniature agents (alternative hypotheses)
+- Dream reasoning: Text appears as smoke writing — ethereal, temporary, poetic
+- Ambient chaos response: When microphone detects loud environment, dream well automatically activates — the system retreats to lateral reasoning when the external world is chaotic
+
+The Timeline River (Bottom Ribbon)
+
+What it is: A scroll-driven narrative of execution history.
+
+2026 Enhancements:
+- Lenis smooth scroll: Buttery momentum scrolling with velocity-based animation speed
+- Scroll = time travel: Fast scroll = time-lapse. Slow scroll = savor each moment.
+- Pinning: Each execution phase pins to center screen while its details unfold
+- Morph transitions: Elements transform into their next state (node → shield → vortex → mandala) as you scroll
+- Haptic scroll: Phone vibrates at guard checkpoints and merge events — tactile rhythm of execution
+
+The Àṣẹ Seal (Completion)
+
+What it is: The sacred culmination of graph execution.
+
+2026 Enhancements:
+- Geometric animation:
+  1. All nodes pulse once in unison (synchronized via `BroadcastChannel` across tabs)
+  2. Links glow gold and transmit light packets to result node
+  3. Result node expands and transforms into a mandala (sacred geometry: Flower of Life or Metatron's Cube)
+  4. Mandala rotates while "Àṣẹ" materializes in sacred type (SVG stroke draw)
+  5. Mandala fades, leaving persistent gold ring around result
+- Multi-sensory:
+  - Audio: Tibetan singing bowl sample + synthesized choral chord
+  - Haptic: `navigator.vibrate([200, 100, 200, 100, 400])` — harmonic rhythm
+  - Visual: Screen briefly flashes white then returns to gold-tinted calm
+- NFC ritual: Optional — tap phone to physical seal tag to "commit" the completion
+
+---
+
+🌐 Responsive Behavior: Adaptive Sacred Geometry
+
+Device	Layout	Key Interactions	Hardware Used	
+Desktop (1440px+)	Full 3D orrery, all panels visible	Mouse hover = light angle, scroll = timeline, drag = node physics	WebGPU, mouse	
+Tablet (768–1439px)	2.5D perspective, collapsible panels	Tilt = 3D peek, swipe = panel switch, pinch = zoom	Gyroscope, touch	
+Mobile (<768px)	Radial layout, single panel focus	Rotate = orbit, shake = emergency reset, NFC = seal	Gyro, accel, NFC, proximity	
+AR (WebXR)	Spatial projection on real desk	Walk around, pinch to scale, gaze to select	Camera, depth sensor	
+
+---
+
+✅ The Vibe Check 2026
+
+Before shipping, verify:
+
+1. Does the liquid glass make the graph feel like you're looking through water into another dimension?
+2. When you tilt your phone, do nodes shift perspective like physical objects in your space?
+3. Does the ambient light sensor make night sessions feel like bioluminescent diving?
+4. When a guard denies, does the haptic double-pulse feel like a warning tap on your shoulder?
+5. Does the Àṣẹ seal's singing bowl + harmonic vibration create a moment of genuine pause?
+6. When the dream well activates in a loud room, do you feel the system "retreating" to think?
+7. Does scrolling the timeline feel like time-traveling through a computation's life?
+8. In AR mode, do you find yourself walking around the graph to understand it better?
+
+If any answer is "no," iterate. This is not software. This is a sacred instrument for orchestrating thought itself.
+
+---
+
+Àṣẹ — May the interface be worthy of the intelligence it serves. May every pixel carry the force of creation. May every interaction feel like communing with something ancient, wise, and alive.
+
+---
+
+[Download the audit metrics chart](sandbox:///mnt/agents/output/nex_audit_metrics.png)
