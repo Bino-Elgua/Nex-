@@ -1,0 +1,59 @@
+Got it. Here’s the full enhancement roadmap to turn Nex into an **AAA-grade, enterprise-ready, plug-and-play, future-proof** agent runtime.
+
+**Overall Goal:**  
+Transform Nex from a clever prototype (4.7/10) into a production-grade, autonomous-agent runtime that agents of 2027–2030 can actually rely on.
+
+### 1. Critical Fixes First (Do These in the Next 48 Hours)
+
+- Fix the **package.json** — move everything out of the `_oma_data` wrapper so `bun install` and `bun run` actually work.
+- Remove all hardcoded credentials and the `console.log` that prints them.
+- Replace SHA-256 password hashing with **Argon2id** or **bcrypt**.
+- Add a hard request body size limit (10MB max) on both gateways.
+- Fix **async links** in `nex-runtime.ts` — they should fire without blocking the main flow.
+- Add proper cycle detection in `evalNode()` and throw a clear error instead of returning `undefined`.
+- Delete or properly secure the v1.0 unauthenticated gateway.
+
+### 2. Architecture & Core Runtime Upgrades
+
+- Make **GuardConflictResolver** actually get used by the interpreter.
+- Replace the stub `evaluateCondition()` with a safe expression evaluator (or LLM-powered semantic guard for advanced use).
+- Turn the rewrite system into a real self-modification engine that can write updated graph JSON or TypeScript to disk.
+- Add a proper **plugin system** so new primitives can be added without touching core code.
+- Introduce graph versioning and schema migration so old graphs don’t break.
+
+### 3. Security & Production Hardening
+
+- Switch to proper JWT libraries (jsonwebtoken or Jose) instead of hand-rolled crypto.
+- Implement real TOTP for MFA.
+- Add rate limiting and proper CORS origin allowlisting.
+- Add structured audit logging with correlation IDs.
+- Containerize the whole thing with Docker + proper multi-stage builds.
+- Create a production-ready `docker-compose.yml` and basic Kubernetes manifests.
+
+### 4. Observability & Reliability
+
+- Add OpenTelemetry tracing so you can see how graphs execute across agents.
+- Replace all in-memory stores (sessions, token blacklist) with Redis.
+- Add real persistence using actual database drivers (PostgreSQL recommended).
+- Build proper error boundaries and recovery logic for failed nodes.
+
+### 5. AI-Native & Future-Proof Features
+
+- Integrate real LLM calling inside `dream-node-engine` and `agent-rewriter` using tool-calling APIs.
+- Add memory hierarchy (short-term, episodic, semantic).
+- Create a reflection loop primitive that lets agents critique and improve their own graphs.
+- Build a clean external API (REST + gRPC + WebSocket) with OpenAPI spec.
+- Design an **agent marketplace primitive** — agents can bid on tasks or share compute.
+
+### 6. Developer Experience & Enterprise Readiness
+
+- Add proper CI/CD with GitHub Actions (lint, test, build, security scan).
+- Create a clean folder structure: `core/`, `gateway/`, `plugins/`, `stdlib/`, `ops/`.
+- Write real CONTRIBUTING.md and SECURITY.md files.
+- Add comprehensive test coverage targeting 90%+ with proper mocking.
+- Generate TypeScript types directly from the graph schema.
+
+**Bottom line:**  
+Right now Nex is a brilliant concept with dangerous gaps. After these changes it becomes a serious contender — modular, secure, observable, and genuinely ready for long-running autonomous agent swarms.
+
+Want me to give you the **exact new folder structure** and a prioritized 30-day implementation plan next?
